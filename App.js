@@ -3,12 +3,14 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import Button from './components/Button';
 import ImageViewer from './components/ImageViewer';
+import NavBar from './components/NavBar';
 
 const PlaceholderImage = require('./assets/images/placeholder-woman.jpg');
 
 export default function App() {
   return (
     <View style={styles.container}>
+      <NavBar style={styles.nav}/>
       <View style={styles.imageContainer}>
         <ImageViewer placeholderImageSource={PlaceholderImage} />
       </View>

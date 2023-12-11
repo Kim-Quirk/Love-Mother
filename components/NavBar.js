@@ -1,16 +1,17 @@
 import React from 'react';
+import '../css/Nav.css';
 
 function NavBar() {
     const pages = ['Home', 'Donna\'s Diary', 'Subscribe'];
     const navLinks = pages.map(page => {
       return (
-        <a href={'/' + page}>
+        <li><a href={'/' + page}>
            &nbsp;{page}
-        </a>
+        </a></li>
       )
     });
 
-    return <nav>{navLinks}</nav>;
+    return <nav><ul>{navLinks}</ul></nav>;
 }
 
 export default NavBar;
